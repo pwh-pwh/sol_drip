@@ -87,6 +87,6 @@ fn main() {
     let pk = Pubkey::from_str(&args.address).unwrap();
     loop {
         send_with_new_account(&client,&pk);
-        thread::sleep(Duration::from_secs(1));
+        thread::sleep(Duration::from_secs(60));
     }
 }
